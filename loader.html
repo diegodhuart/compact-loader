@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en" class="bootstrap-fix">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>loader</title>
+	<style>
+	
+		.loader-animation .dot:nth-child(2) {
+			animation-delay: 0.33s;
+		}
+		.loader-animation .dot:nth-child(3) {
+			animation-delay: 0.66s;
+		}
+		.loader-animation .dot {
+			display: inline-block;
+			width: 6px;
+			height: 6px;
+			margin: auto auto 12px;
+			border-radius: 50%;
+			animation: blinking-dot 1s linear infinite;
+			background: black;
+			opacity: 0.4;
+		}
+
+		@keyframes blinking-dot {
+			0% { opacity: 1; }
+			25% { opacity: 0.4; }
+			75% { opacity: 0.4; }
+			100% { opacity: 1; }
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="js-log-animation loader-animation pt-3 pl-3">
+	<div class="dot"></div>
+	<div class="dot"></div>
+	<div class="dot"></div>
+</div>
+
+</body>
+</html>
+
